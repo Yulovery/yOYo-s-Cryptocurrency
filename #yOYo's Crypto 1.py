@@ -1,12 +1,12 @@
 #yOYo's Crypto 1
-#Dec 13 9pm - 11:10pm
-
+#Dec 14 2pm - 3pm
 
 from hashlib import sha256
 import base64
 
 def updatehash(*args):                  #create and return a ahsh based on the information given
-    hashing_text = ""   #instance of the imported hash "class"
+    hashing_text = "" #instance of the imported hash "class"
+    #h =sha256()
     for arg in args:
         hashing_text += str(arg)
     h = sha256(hashing_text.encode('utf-8'))
@@ -32,7 +32,7 @@ class Block (object):
 
     def __str__(self) -> str:
         return str(
-            "Block_Number: %s \nHash: %s \nPrevious_Hash: %s \nData: %s \nNonce: %s" 
+            "\nBlock_Number: %s \nHash: %s \nPrevious_Hash: %s \nData: %s \nNonce: %s" 
             %(self.number, self.hash(), self.prev_hash, self.data, self.nonce)
             )
 
@@ -46,23 +46,20 @@ class Block (object):
 
 
 class Blockchain (object):
-    difficulty = 'yOYo'
+    difficulty = 'yO'
 
     def __init__(self, chain =[]):
         self.chain = chain
     
     def addBlock(self, block):
-        self.chain.append({
-            'hash': block.hash(), 
-            "previous": block.prev_hash, 
-            'number': block.number, 
-            'data': block.data, 
-            'nonce': block.nonce
-            })
+        self.chain.append(block)
+
+    def removeBlock(self, block):
+        self.chain.remove(block)
 
     def mine(self, block):
         try:                            #try/except runs faster than if
-            block.prev_hash = self.chain[-1].get('hash')
+            block.prev_hash = self.chain[-1].hash()
         except IndexError:
             pass
 
@@ -73,10 +70,21 @@ class Blockchain (object):
             else:
                 block.nonce += 1
 
+    def isValid(self):
+        for i in range(1, len(self.chain)):
+            stored_previous = self.chain[i].prev_hash
+            previous = self.chain[i-1].hash()
+            if stored_previous != previous or previous[:len(self.difficulty)] != self.difficulty:
+                return False
+        return True
+            
+
+
+
 
 if __name__ == '__main__':
     blockchain = Blockchain()
-    database = ['hellowcworld', 'hi']
+    database = ['hellowcworld', 'hi', 'fghj']
     num = 0
 
     for data in database:
@@ -85,5 +93,7 @@ if __name__ == '__main__':
 
     for b in blockchain.chain:
         print (b)
+
+    print ('\nThe Block Chain is Valid:\n',blockchain.isValid())
 
 
