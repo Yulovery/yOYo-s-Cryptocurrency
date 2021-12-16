@@ -80,8 +80,6 @@ class Blockchain (object):
             
 
 
-
-
 if __name__ == '__main__':
     blockchain = Blockchain()
     database = ['hellowcworld', 'hi', 'fghj']
