@@ -18,3 +18,13 @@ A Cryptocurrency by yOYo
   #created IsValide Function
   #realized a critical issue with the block and blockchain structure
     #trying to fix it...
+    
+ #Log Day4 Jan.5 8pm-9pm(60min) --
+  #Fixed the blocking chain structure
+  #Every Block Is Now Complete With Recursion
+  #Installed Flask with Conda
+  #Installed Fask-Mysql
+  #Cannot Install Flask-mysqldb 
+    #No Idea How To Fix This
+  #Can't Start Local Server
+  #????????????????? Bunch of bullshit when try to import stuff
