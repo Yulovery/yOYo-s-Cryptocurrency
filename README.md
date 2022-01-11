@@ -28,3 +28,10 @@ A Cryptocurrency by yOYo
     #No Idea How To Fix This
   #Can't Start Local Server
   #????????????????? Bunch of bullshit when try to import stuff
+  
+  #Log Day5 Jan.7 5pm-6pm(60min) --
+    #ffixing denpendency with brew (Trying)
+      #install brew
+      #Echo Path?? dont know what is going on
+    #???Down Graded Anaconda - flask-mysqldb installed?
+  
