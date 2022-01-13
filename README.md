@@ -34,4 +34,14 @@ A Cryptocurrency by yOYo
       #install brew
       #Echo Path?? dont know what is going on
     #???Down Graded Anaconda - flask-mysqldb installed?
+    
+    
+   #Log Day6 Jan.12 8:22pm-9:13pm(~50min) --
+    #Installed mysql
+    #Nothing Works
+      #ERROR! The server quit without updating PID file (/Users/yoyo/opt/anaconda3/data/yOYos-MacBook-Air.local.pid).
+    #Cry Insdie 
+    #Fix it for 40min and not get it fixed
+    #decide to not make it online, literatlly impossible
+    #gonna do some wakky offline shit, maybe
   
