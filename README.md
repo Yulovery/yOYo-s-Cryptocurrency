@@ -64,3 +64,5 @@ A Cryptocurrency by yOYo
      *clac Money
      *miner reward
      #kinda works now
+     
+#Will Add Documentation And User Manuel
