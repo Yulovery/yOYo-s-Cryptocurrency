@@ -44,4 +44,23 @@ A Cryptocurrency by yOYo
     #Fix it for 40min and not get it fixed
     #decide to not make it online, literatlly impossible
     #gonna do some wakky offline shit, maybe
-  
+    
+   #Log Day7 Jan. 14~19 (Some 1h Time) Jan.20 12:40 - 2:30（110min）4:30pm- 8:00pm(210min) --
+     #tried to fix server more
+     #roll in bed as realization that offline really doesnt work
+     #do it naywya and have some bad solution
+     #Think more about how it work
+     #Cant figur eout
+     #does it anywya and force myself into coding
+     #suffer as how horrible the RSA documentation is
+     #a lot of research
+     #implement function
+     *public key private key
+     *transaction - signing
+     *RSA key import
+     *user registration
+     *mine transaction
+     *read block data
+     *clac Money
+     *miner reward
+     #kinda works now
