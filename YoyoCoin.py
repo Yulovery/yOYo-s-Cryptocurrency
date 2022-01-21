@@ -1,13 +1,8 @@
 #yOYo's Crypto 1
 #Dec 14 2pm - 3pm
 
-from collections import UserDict
 from hashlib import sha256
 import base64
-from itertools import starmap
-from os import nice
-from signal import siginterrupt
-from typing import Optional
 import pickle
 from Crypto.PublicKey import RSA
 from Crypto.Signature import pkcs1_15
